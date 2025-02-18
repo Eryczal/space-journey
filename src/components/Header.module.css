@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    font-family: "Barlow Condensed", serif;
+    position: absolute;
+    top: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.navLink {
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 200;
+}
