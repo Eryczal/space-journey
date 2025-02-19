@@ -7,9 +7,11 @@ function Background({ isExploring }) {
     const [offset, setOffset] = useState({ x: 50, y: 50 });
 
     useEffect(() => {
-        setTimeout(() => {
-            setIsActive(true);
-        }, 5000);
+        if (isExploring) {
+            setTimeout(() => {
+                setIsActive(true);
+            }, 3000);
+        }
     }, [isExploring]);
 
     const handleMouseMove = (e) => {
