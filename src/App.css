@@ -6,6 +6,7 @@ body {
     font-family: "Barlow", serif;
     paint-order: stroke fill;
     -webkit-text-stroke: 0.2em var(--page-stroke-color);
+    line-height: 1.5;
 }
 
 h1,

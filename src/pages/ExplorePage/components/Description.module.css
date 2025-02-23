@@ -4,13 +4,16 @@
 }
 
 .container h1 {
-    font-family: "Barlow Condensed", serif;
-    text-transform: uppercase;
     font-weight: 300;
     font-size: 4rem;
+    text-transform: uppercase;
     text-align: center;
 }
 
+.container .content {
+    overflow-y: auto;
+}
+
 .container p {
-    font-size: 1.1rem;
+    margin: 1rem 0;
 }
