@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.planetContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}

@@ -4,6 +4,8 @@ body {
     height: 100vh;
     color: var(--text-color);
     font-family: "Barlow", serif;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.2em var(--page-stroke-color);
 }
 
 h1,
