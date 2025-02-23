@@ -1,4 +1,5 @@
 :root {
     --background-gradient: linear-gradient(to bottom, transparent 25%, #070908 40%, #131535 70%, #3337a9);
     --text-color: #d2d6dd;
+    --page-stroke-color: transparent;
 }
