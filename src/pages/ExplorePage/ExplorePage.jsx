@@ -12,14 +12,20 @@ const planets = [
     {
         name: "Mercury",
         scale: 0.006,
+        light: 5,
     },
     {
         name: "Venus",
         scale: 0.006,
+        light: 2,
     },
     {
         name: "Earth",
         scale: 0.006,
+        light: 5,
+        additionalStyle: {
+            filter: "grayscale(40%)",
+        },
     },
 ];
 
@@ -44,8 +50,8 @@ function ExplorePage() {
             <Header />
             <main className={styles.page} onDoubleClick={changePlanet}>
                 <div className={styles.planetContainer}>
-                    <Canvas camera={{ position: [0, 0, 8] }} gl={{ localClippingEnabled: true }}>
-                        <ambientLight intensity={5} />
+                    <Canvas camera={{ position: [0, 0, 8] }} gl={{ localClippingEnabled: true }} style={planets[planetIndex].additionalStyle}>
+                        <ambientLight intensity={planets[planetIndex].light} />
                         <Planet name={planets[planetIndex].name} scale={planets[planetIndex].scale} />
                         <OrbitControls
                             enableZoom={true}
