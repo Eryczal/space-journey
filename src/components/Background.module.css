@@ -6,7 +6,7 @@
     pointer-events: none;
     z-index: -1;
     background-color: #070908;
-    background: var(--background-gradient), url("stars.jpg");
+    background: var(--background-gradient), url("/stars.jpg");
     background-repeat: no-repeat;
     background-size: 100% 400%, 110%;
     background-position: 0 100%, center -100vh;

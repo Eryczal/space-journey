@@ -21,5 +21,25 @@
 .content {
     height: 40vh;
     scrollbar-width: thin;
-    scrollbar-color: #333 #666;
+    scrollbar-color: #3c3c3c #1c1c1c;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.dot {
+    outline: 0.16rem solid #ccc;
+    border: 0.16rem solid #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    padding: 0.26rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ccc;
 }
