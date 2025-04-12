@@ -17,3 +17,9 @@
 .container p {
     margin: 1rem 0;
 }
+
+.content {
+    height: 40vh;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #666;
+}

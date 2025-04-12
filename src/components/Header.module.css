@@ -3,6 +3,7 @@
     font-family: "Barlow Condensed", serif;
     position: absolute;
     top: 0;
+    z-index: 5;
 }
 
 .navigation ul {

@@ -37,7 +37,7 @@ function ExplorePage() {
                         />
                     </Canvas>
                 </div>
-                <Description />
+                <Description selectedPlanet={"Earth"} />
                 <Background isExploring={true} />
             </main>
         </>
