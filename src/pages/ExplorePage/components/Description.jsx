@@ -20,6 +20,8 @@ function Description({ selectedPlanet }) {
             }
         };
 
+        setSelectedPage(0);
+
         loadPlanetData();
     }, [selectedPlanet]);
 
