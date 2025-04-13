@@ -19,7 +19,7 @@
 }
 
 .content {
-    height: 40vh;
+    height: 50vh;
     scrollbar-width: thin;
     scrollbar-color: #3c3c3c #1c1c1c;
 }
@@ -42,4 +42,15 @@
 
 .active {
     background-color: #ccc;
+}
+
+.nextPlanet {
+    margin-top: 10%;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
 }

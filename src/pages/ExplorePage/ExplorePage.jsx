@@ -48,7 +48,7 @@ function ExplorePage() {
     return (
         <>
             <Header />
-            <main className={styles.page} onDoubleClick={changePlanet}>
+            <main className={styles.page}>
                 <div className={styles.planetContainer}>
                     <Canvas camera={{ position: [0, 0, 8] }} gl={{ localClippingEnabled: true }} style={planets[planetIndex].additionalStyle}>
                         <ambientLight intensity={planets[planetIndex].light} />
@@ -67,7 +67,7 @@ function ExplorePage() {
                         />
                     </Canvas>
                 </div>
-                <Description selectedPlanet={planets[planetIndex].name} />
+                <Description selectedPlanet={planets[planetIndex].name} isLast={planetIndex >= planets.length - 1} changePlanet={changePlanet} />
                 <Background isExploring={true} />
             </main>
         </>

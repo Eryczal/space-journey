@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Description.module.css";
 
-function Description({ selectedPlanet }) {
+function Description({ selectedPlanet, isLast, changePlanet }) {
     const [data, setData] = useState(null);
     const [selectedPage, setSelectedPage] = useState(0);
 
@@ -41,6 +41,9 @@ function Description({ selectedPlanet }) {
                 {data.pages[selectedPage].map((data, i) => {
                     return <p key={i}>{data}</p>;
                 })}
+            </div>
+            <div className={styles.nextPlanet} onClick={changePlanet}>
+                {!isLast ? "Dalej ⟶" : "Zacznij od nowa"}
             </div>
         </div>
     );
