@@ -1,28 +1,23 @@
+import { useNavigate } from "react-router";
 import styles from "./MainPage.module.css";
 
-import { Background } from "../components/Background";
-import { ExploreButton } from "../components/ExploreButton";
-import { Header } from "../components/Header";
-import { ReadyText } from "../components/ReadyText";
+import { Background } from "./components/Background/Background";
+import { ExploreButton } from "./components/ExploreButton/ExploreButton";
+import { ReadyText } from "./components/ReadyText/ReadyText";
 
-import { useEffect, useState } from "react";
-import { usePage } from "../contexts/PageContext";
+import { useState } from "react";
 
 function MainPage() {
-    const { setPage } = usePage();
+    const navigate = useNavigate();
     const [exploring, setExploring] = useState(false);
 
     const startExploration = () => {
         setExploring(true);
 
         setTimeout(() => {
-            setPage("explore");
+            navigate("/explore");
         }, 3000);
     };
-
-    useEffect(() => {
-        document.body.style.transition = "-webkit-text-stroke 0.5s ease";
-    });
 
     return (
         <>

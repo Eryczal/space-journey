@@ -1,0 +1,18 @@
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    background-color: #070908;
+    background: url("/sky.jpg"), var(--background-gradient), url("/stars.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100vw 300vh, 110%;
+    background-position: center 0vh, center -300vh, center -100vh;
+    transition: 3s ease-in;
+}
+
+.exploring {
+    background-position: center 300vh, center 0vh, center center;
+}

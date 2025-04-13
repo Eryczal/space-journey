@@ -1,5 +1,40 @@
 :root {
-    --background-gradient: linear-gradient(to bottom, transparent 25%, #070908 40%, #131535 70%, #3337a9);
+    --background-gradient: linear-gradient(to bottom, transparent 25%, #050402 40%, #131535 70%, #2c8db7);
     --text-color: #d2d6dd;
     --page-stroke-color: transparent;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+    font-family: "Barlow", serif;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.2em var(--page-stroke-color);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Barlow Condensed", serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+#root {
+    height: 100%;
 }

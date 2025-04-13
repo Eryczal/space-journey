@@ -4,14 +4,14 @@
     text-transform: uppercase;
     font-size: 2.6rem;
     border-radius: 50%;
-    background-color: #c4c8e6;
-    color: #101010;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
     width: 15%;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.4rem solid #363963;
+    border: 1px solid #fff;
     cursor: pointer;
     margin-right: 10%;
 }

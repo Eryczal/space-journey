@@ -1,33 +1,13 @@
 import styles from "./ExplorePage.module.css";
 
 import { useEffect, useState } from "react";
-import { Background } from "../../components/Background";
-import { Header } from "../../components/Header";
+import { Header } from "./components/Header/Header";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Description } from "./components/Description";
+import { Description } from "./components/Description/Description";
 import Planet from "./components/Planet";
-
-const planets = [
-    {
-        name: "Mercury",
-        scale: 0.006,
-        light: 5,
-    },
-    {
-        name: "Venus",
-        scale: 0.006,
-        light: 2,
-    },
-    {
-        name: "Earth",
-        scale: 0.006,
-        light: 5,
-        additionalStyle: {
-            filter: "grayscale(40%)",
-        },
-    },
-];
+import { MoveableBackground } from "./components/MoveableBackground/MoveableBackground";
+import { planets } from "../../data/planetData";
 
 function ExplorePage() {
     const [planetIndex, setPlanetIndex] = useState(0);
@@ -68,7 +48,7 @@ function ExplorePage() {
                     </Canvas>
                 </div>
                 <Description selectedPlanet={planets[planetIndex].name} isLast={planetIndex >= planets.length - 1} changePlanet={changePlanet} />
-                <Background isExploring={true} />
+                <MoveableBackground />
             </main>
         </>
     );
