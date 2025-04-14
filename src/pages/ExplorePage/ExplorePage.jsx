@@ -1,6 +1,6 @@
 import styles from "./ExplorePage.module.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Header } from "./components/Header/Header";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -10,6 +10,7 @@ import { MoveableBackground } from "./components/MoveableBackground/MoveableBack
 import { planets } from "../../data/planetData";
 
 function ExplorePage() {
+    const lightRef = useRef(null);
     const [planetIndex, setPlanetIndex] = useState(0);
 
     useEffect(() => {
@@ -31,7 +32,15 @@ function ExplorePage() {
             <main className={styles.page}>
                 <div className={styles.planetContainer}>
                     <Canvas camera={{ position: [0, 0, 8] }} gl={{ localClippingEnabled: true }} style={planets[planetIndex].additionalStyle}>
-                        <ambientLight intensity={planets[planetIndex].light} />
+                        <spotLight
+                            ref={lightRef}
+                            position={[0, 0, 12]}
+                            target-position={[0, 0, 8]}
+                            intensity={planets[planetIndex].light}
+                            penumbra={1}
+                            angle={Math.PI / 10}
+                            castShadow
+                        />
                         <Planet name={planets[planetIndex].name} scale={planets[planetIndex].scale} />
                         <OrbitControls
                             enableZoom={true}
@@ -42,8 +51,21 @@ function ExplorePage() {
                             rotateSpeed={0.2}
                             enableDamping
                             dampingFactor={0.05}
-                            minPolarAngle={Math.PI * 0.25}
-                            maxPolarAngle={Math.PI * 0.75}
+                            minPolarAngle={Math.PI * 0.2}
+                            maxPolarAngle={Math.PI * 0.8}
+                            onChange={(e) => {
+                                if (!e) {
+                                    return;
+                                }
+
+                                const camera = e.target.object;
+
+                                if (lightRef.current) {
+                                    const direction = camera.position.clone().normalize().multiplyScalar(12);
+                                    lightRef.current.position.set(direction.x, direction.y, direction.z);
+                                    lightRef.current.angle = Math.PI / (12 - 0.5 * (camera.position.length() - 6));
+                                }
+                            }}
                         />
                     </Canvas>
                 </div>
