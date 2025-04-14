@@ -22,8 +22,10 @@ function MainPage() {
     return (
         <>
             <main className={styles.page}>
-                <ReadyText />
-                <ExploreButton start={startExploration} />
+                <div className={styles.container}>
+                    <ReadyText />
+                    <ExploreButton start={startExploration} />
+                </div>
                 <Background isExploring={exploring} />
             </main>
         </>
