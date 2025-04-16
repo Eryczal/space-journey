@@ -41,6 +41,7 @@ function ExplorePage() {
                             angle={Math.PI / 10}
                             castShadow
                         />
+                        <ambientLight intensity={planets[planetIndex].ambientLight || 0} />
                         <Planet name={planets[planetIndex].name} scale={planets[planetIndex].scale} />
                         <OrbitControls
                             enableZoom={true}
