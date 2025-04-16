@@ -1,0 +1,18 @@
+{
+    "name": "Wenus",
+    "pages": [
+        [
+            "Wenus jest najgorętszą planetą w Układzie Słonecznym. Oprócz bardzo dużego gorąca na planecie, znajduje się tutaj też gęsta, toksyczna atmosfera. Chmury tutaj składają się z kwasu siarkowego, przez co śmierdzą one jak zgniłe jaja.",
+            "Ciśnienie na tej planecie jest 93 razy większe niż na Ziemi. Do tej pory odkryto tutaj ponad 1600 wulkanów, z czego 167 z nich ma średnicę większą niż 100km.",
+            "Planetę tą ciężko obserwować z kosmosu ze względu na gęste chmury, które bardzo dobrze odbijają światło widzialne. Stałe zachmurzenie sprawia, że powierzchnia planety nie jest dobrze oświetlona."
+        ],
+        ["Średnica: 12 104 km", "Czas trwania dnia: 243 ziemskich dni", "Czas trwania roku: 225 ziemskich dni", "Zakres temperatur: 435°C - 465°C"],
+        [
+            "Zachody i wschody słońca na tej planecie są przeciwne niż na większości planet w Układzie Słonecznym. Oznacza to, że Słońce wschodzi tu na zachodzie, a zachodzi na wschodzie.",
+            "Chociaż planeta jest bardzo toksyczna, istnieją teorie, że na tej planecie może istnieć życie. Mowa o mikroorganizmach, które mogłyby istnieć w chmurach, gdzie temperatura i ciśnienie są bliższe tym na Ziemi.",
+            "Chociaż Merkury znajduje się najbliżej Słońca, nie jest to najgorętsza planeta w Układzie Słonecznym.",
+            "Dzień na ten planecie trwa dłużej niż rok.",
+            "Istnieją przypuszczenia, że w przeszłości były tu oceany, które odparowały ze względu na rosnącą temperaturę."
+        ]
+    ]
+}

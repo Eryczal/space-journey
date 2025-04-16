@@ -2,9 +2,11 @@
     "name": "Ziemia",
     "pages": [
         [
-            "Pierwszą i najbliższą planetą jest Ziemia. Ziemia znajduje się w Układzie Słonecznym, jest trzecia od strony Słońca.",
-            "Ziemia jest niebieska przez oceany wody znajdujące się na niej. Jest to jedyna znana planeta, która posiada wodę w stanie ciekłym na jej powierzchni. Oprócz tego widoczne z kosmosu są białe chmury.",
+            "Jest to jedyna planeta, na której do tej pory znaleziono jakiekolwiek życie. Znajdują się tu liczne oceany oraz duży zakres roślinności.",
+            "Ziemia jest niebieska przez oceany wody znajdujące się na niej. Z kosmosu można zauważyć gęste, białe chmury, które mogą zasłaniać widoczność Ziemi.",
             "Planeta ta posiada księżyc, który prawdopodobnie powstał około 4,5 miliarda lat temu w wyniku kolizji protoplanety wielkości Marsa."
-        ]
+        ],
+        ["Średnica: 12 742 km", "Czas trwania dnia: 1 ziemski dzień", "Czas trwania roku: 365 ziemskich dni", "Zakres temperatur: -80°C - 60°C"],
+        ["Szacuje się, że 99% gatunków organizmów żywych kiedykolwiek zamieszkujących Ziemię wymarło (5 mld)."]
     ]
 }

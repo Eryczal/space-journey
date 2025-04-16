@@ -3,7 +3,14 @@
     "pages": [
         [
             "Pierwszą planetą od słońca jest Merkury. Jest to najmniejsza planeta w Układzie Słonecznym, która jest tylko trochę większa od księżyca Ziemi.",
-            "Ponieważ planeta ta znajduje się blisko Słońca, znajdują się na niej ekstremalne temperatury. Temperatura w dzień na tej planecie może wynieść 430°C, a w nocy spada ona do -180°C."
+            "Ponieważ planeta ta znajduje się blisko Słońca, znajdują się na niej ekstremalne temperatury. Temperatura w dzień na tej planecie może wynieść 430°C, a w nocy spada ona do -180°C.",
+            "Planeta posiada bardzo dużo kraterów na powierzchni, co jest wynikiem wielu zderzeń na przestrzeni miliardów lat. Największy krater na tej planecie ma średnicę 1550 km, co stanowi prawie ⅓ średnicy całej planety."
+        ],
+        ["Średnica: 4 880 km", "Czas trwania dnia: 176 ziemskich dni", "Czas trwania roku: 88 ziemskich dni", "Zakres temperatur: -180°C - 430°C"],
+        [
+            "Na planecie znaleziono lód wodny na biegunach planety.",
+            "Z powodu słabej grawitacji planeta, atmosfera jest znikoma i przypomina próżnię. W śladowych ilościach można znaleźć w niej głównie tlen i sód.",
+            "Chociaż Merkury znajduje się najbliżej Słońca, nie jest to najgorętsza planeta w Układzie Słonecznym."
         ]
     ]
 }
