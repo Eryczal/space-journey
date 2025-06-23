@@ -1,6 +1,6 @@
 import styles from "./ExplorePage.module.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Header } from "./components/Header/Header";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -12,10 +12,6 @@ import { planets } from "../../data/planetData";
 function ExplorePage() {
     const lightRef = useRef(null);
     const [planetIndex, setPlanetIndex] = useState(0);
-
-    useEffect(() => {
-        document.body.style.setProperty("--page-stroke-color", "#070908");
-    }, []);
 
     const changePlanet = () => {
         if (planetIndex === planets.length - 1) {
