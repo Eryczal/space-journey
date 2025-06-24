@@ -31,16 +31,24 @@ function Description({ selectedPlanet, isLast, changePlanet }) {
 
     return (
         <div className={styles.container}>
-            <nav className={styles.navigation}>
-                {data.pages.map((page, i) => {
-                    return <div className={`${styles.dot} ${i === selectedPage ? styles.active : ""}`} key={i} onClick={() => setSelectedPage(i)}></div>;
-                })}
-            </nav>
-            <div className={styles.content}>
+            <div className={styles.planetHeader}>
                 <h1>{data.name}</h1>
-                {data.pages[selectedPage].map((data, i) => {
-                    return <p key={i}>{data}</p>;
-                })}
+            </div>
+            <div className={styles.contentContainer}>
+                <div className={styles.content}>
+                    {data.pages[selectedPage].map((data, i) => {
+                        return <p key={i}>{data}</p>;
+                    })}
+                </div>
+                <nav className={styles.navigation}>
+                    <div className={styles.navigationContent}>
+                        {data.pages.map((page, i) => {
+                            return (
+                                <div className={`${styles.dot} ${i === selectedPage ? styles.active : ""}`} key={i} onClick={() => setSelectedPage(i)}></div>
+                            );
+                        })}
+                    </div>
+                </nav>
             </div>
             <div className={styles.nextPlanet} onClick={changePlanet}>
                 {!isLast ? "Dalej ⟶" : "Zacznij od nowa"}
